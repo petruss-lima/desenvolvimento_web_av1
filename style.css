@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to bottom, red, black);
+    font-size: 20px;
+    margin: 0;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.logo{
+    vertical-align: middle;
+}
+
+#nav {
+    display: flex;
+    gap: 25px;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* distância entre ícone e texto */
+}
+
+#nav img {
+    width: 20px;
+    height: 20px;
+}
+
+
+#nav a:hover {
+    color: #e50914;
+}
+
+#pesquisa {
+    display: flex;
+}
+
+#pesquisa input {
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#pesquisa button {
+    padding: 10px 35px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.filme {
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.filme img {
+    width: 100%;
+    height: 400px;
+    vertical-align: middle;
+}
+
+.filme .symbol{
+    width:25px;
+    height:25px; 
+    vertical-align: middle;
+}
+.filme h3 {
+    margin-bottom: 5px;
+}
+
+.filme p {
+    color: #bbb;
+}
+
+footer {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+    margin-top: 30px;
+     background-image: linear-gradient(to bottom, black, red);
+     color: white;
+}
