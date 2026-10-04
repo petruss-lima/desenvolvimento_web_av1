@@ -9,7 +9,7 @@ header {
     background-image: linear-gradient(to bottom, red, black);
     font-size: 20px;
     margin: 0;
-    padding: 15px 40px;
+    padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,18 +27,18 @@ header {
 #nav a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .nav-item {
     display: flex;
     align-items: center;
-    gap: 5px; /* distância entre ícone e texto */
+    gap: 5px;
 }
 
 #nav img {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
 }
 
 
@@ -51,7 +51,8 @@ header {
 }
 
 #pesquisa input {
-    padding: 10px 35px;
+    padding: 15px 40px;
+    width: 300px;
     border: none;
     border-radius: 5px 0 0 5px;
 }
@@ -100,6 +101,60 @@ footer {
     font-size: 30px;
     padding: 20px;
     margin-top: 30px;
-     background-image: linear-gradient(to bottom, black, red);
-     color: white;
+    background-image: linear-gradient(to bottom, black, red);
+    color: white;
+    align-items: center;
+}
+
+footer img{
+    width: 55px;
+    height: 55px;
+    gap: 4px;
+    margin-top: -100px;
+}
+
+.seguranca{
+    width: 150px;
+    height: 100px;
+    gap: 4px;
+    margin-bottom: -25px;
+}
+
+.reclame{
+    width: 180px;
+    height: 90px;
+    margin-bottom: -29px;
+    gap: 4px;
+}
+
+@media (max-width: 900px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav {
+        flex-direction: flex;
+        gap: 10px;
+    }
+
+    .filme img {
+        width: 100%;
+    }
+
+    footer nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .seguranca{
+        display: none;
+    }
 }
