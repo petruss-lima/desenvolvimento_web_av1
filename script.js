@@ -88,7 +88,7 @@ const filmes = ["The Batman", "Interestelar", "Piratas do Caribe", "O Poderoso C
 ];
 
 if (filmes.length > 0) {
-console.log("Existem filmes disponíveis para aluguel.");
+console.log("Existem " + filmes.length + " filmes disponíveis para aluguel.");
 console.log("Quantidade de filmes: " + filmes.length);
 } else {
 console.log("Não existem filmes disponíveis.");

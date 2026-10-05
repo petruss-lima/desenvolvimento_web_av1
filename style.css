@@ -1,3 +1,6 @@
+*{
+    font-family: Arial, sans-serif;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -131,7 +134,11 @@ footer img{
     gap: 4px;
 }
 
-@media (max-width: 900px) {
+textarea{
+    resize: none;
+}
+
+@media (max-width: 600px) {
     .catalogo {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;

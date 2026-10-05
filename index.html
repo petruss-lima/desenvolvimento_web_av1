@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <div class="container">
+        <div>
             <h1><img class="logo" src="images/symbols/alugaflix.png" width="160px" height="160px">
              AlugaFlix</h1>
         </div>
@@ -24,6 +24,11 @@
         </div>
 
         <nav id="nav">
+
+            <div class="nav-item">
+               🛒
+               <a href="#">Carrinho</a>
+            </div>   
 
             <div class="nav-item">
                 <img src="images/symbols/user.png"> 
@@ -170,10 +175,29 @@
                 </div>
             </section>
 
+            <h3>Entre em Contato com a Nossa Equipe!</h3>
+                <form>
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required>
+                    </p>
+
+                    <p>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+                    </p>
+
+                    <p>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="2" required></textarea>
+                    </p>
+                    <button type="submit">Enviar</button>
+                </form>
+
         </main>    
 
     <footer>
-        <div class="container">
+        <div>
             <p>© 2026 AlugaFlix</p>
         </div>
 
